@@ -35,6 +35,14 @@ $(document).ready(function(){
 		$("#outputSubtract").text(result);
 	});
 
+	$("form#divide").submit(function(event){
+		event.preventDefault();
+		var number1 = parseInt($("#divide1").val());
+		var number2 = parseInt($("#divide2").val());
+		var result = divide(number1, number2);
+		$("#outputDivide").text(result);
+	});
+
 	// var number1 = parseInt(prompt("Enter a number:"));
 	// var number2 = parseInt(prompt("Enter another number: "));
 
